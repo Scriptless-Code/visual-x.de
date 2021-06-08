@@ -1,0 +1,55 @@
+<Pro<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- If building a 0.3.7 server use this configuration -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- If building a 0.3.7 server use this configuration -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RuntimeFrameworkVersion>2.0.3</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <!-- If building a 1.1 server use this configuration -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>..\..\runtime\Bootstrapper.dll</HintPath>
+      <Private Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+  </ItemGroup>
+
+</Project> a 0.3.7 server use this configuration -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RuntimeFrameworkVersion>2.0.3</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <!-- If building a 1.1 server use this configuration -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>..\..\runtime\Bootstrapper.dll</HintPath>
+      <Private Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
